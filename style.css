@@ -1,0 +1,174 @@
+/* --- Global Styles --- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #444;
+    /* Footer and Cart bar fix-panna extra padding */
+    padding-bottom: 120px; 
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* --- Navigation Bar --- */
+.navbar {
+    background-color: #ffffff !important;
+    border-bottom: 2px solid #f89d1c;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: #444 !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #d35400 !important;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('image/bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+/* --- Buttons --- */
+.btn-ginger {
+    background-color: #d35400;
+    color: white;
+    border-radius: 30px;
+    padding: 12px 35px;
+    border: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-ginger:hover {
+    background-color: #f89d1c;
+    color: white;
+}
+
+/* --- Sections & Backgrounds --- */
+.section-padding {
+    padding: 100px 0;
+}
+
+.bg-ginger {
+    background-color: #f89d1c;
+}
+
+#about {
+    position: relative;
+    background-color: rgba(251, 236, 93, 0.2); 
+    overflow: hidden;
+}
+
+#about::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url('image/ginger.png'); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+#about .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* --- Candy Cards --- */
+.candy-card {
+    background: white;
+    color: #333;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    height: 100%;
+    border: 1px solid transparent; 
+}
+
+.candy-card:hover {
+    transform: translateY(-10px);
+    border: 1px solid #d35400; 
+    box-shadow: 0 15px 35px rgba(211, 84, 0, 0.2);
+}
+
+/* --- Cart Bar & Footer Integration --- */
+
+/* Footer: Static at bottom of screen */
+/* Footer: Eppovum bottom-la stick aagi irukkum */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1100; 
+    background-color: #1a252f !important;
+    color: white;
+    padding: 15px 0;
+    display: block; /* Default-ah theriyum */
+}
+
+/* Cart Bar: Adhe bottom-la irukkum, aana starting-la hide aagi irukkum */
+#cart-status {
+    display: none; /* Items add panna mattum show aagum */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #222;
+    z-index: 1200; /* Footer-ku mela theriya high priority */
+    padding: 12px 0;
+    border-top: 3px solid #f89d1c;
+}
+
+.cart-input {
+    max-width: 150px;
+}
+
+/* --- Floating Elements --- */
+.whatsapp-float {
+    position: fixed;
+    bottom: 120px; /* Adjusted to stay above Cart Bar and Footer */
+    right: 30px;
+    background-color: #25d366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 2000; 
+    transition: 0.3s;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 576px) {
+    .whatsapp-float {
+        bottom: 115px;
+        right: 20px;
+        padding: 15px;
+        border-radius: 50%;
+    }
+    .whatsapp-float span {
+        display: none;
+    }
+}
