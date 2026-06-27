@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VVS Ginger Murabba | Premium Candies</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,31 +14,40 @@
 <body>
 
 <!-- ══════════════════════════════════════════════
-     CINEMATIC MORPHING LOADER
+     PREMIUM LUXURY LOADER
 ══════════════════════════════════════════════ -->
 <div id="page-loader">
-    <div class="loader-bg-wipe"></div>
+    <div class="loader-ambient"></div>
+    <div class="loader-shimmer"></div>
+    <div class="loader-orb"></div>
+    <div class="loader-orb"></div>
+    <div class="loader-orb"></div>
+    <div class="loader-veil loader-veil-left"></div>
+    <div class="loader-veil loader-veil-right"></div>
     <div class="loader-inner">
-        <svg class="morph-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <path class="morph-path" d="M 100,40 C 140,40 160,70 160,100 C 160,130 140,160 100,160 C 60,160 40,130 40,100 C 40,70 60,40 100,40 Z"/>
-        </svg>
-        <div class="loader-text-wrap">
-            <span class="loader-brand-letter" style="--i:0">V</span>
-            <span class="loader-brand-letter" style="--i:1">V</span>
-            <span class="loader-brand-letter" style="--i:2">S</span>
+        <div class="loader-emblem">
+            <svg class="loader-ring-svg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                <circle class="loader-ring-track" cx="60" cy="60" r="54"/>
+                <circle class="loader-ring-fill" cx="60" cy="60" r="54"/>
+            </svg>
+            <div class="loader-logo-box">
+                <span class="loader-logo-vvs">VVS</span>
+            </div>
         </div>
-        <div class="loader-tagline">Ginger Murabba</div>
-        <div class="loader-progress-bar"><div class="loader-progress-fill"></div></div>
+        <div class="loader-brand-name">
+            <span class="lbn-char" style="--ci:0">G</span><span class="lbn-char" style="--ci:1">i</span><span class="lbn-char" style="--ci:2">n</span><span class="lbn-char" style="--ci:3">g</span><span class="lbn-char" style="--ci:4">e</span><span class="lbn-char" style="--ci:5">r</span>
+            <span class="lbn-space"> </span>
+            <span class="lbn-char lbn-gold" style="--ci:6">M</span><span class="lbn-char lbn-gold" style="--ci:7">u</span><span class="lbn-char lbn-gold" style="--ci:8">r</span><span class="lbn-char lbn-gold" style="--ci:9">a</span><span class="lbn-char lbn-gold" style="--ci:10">b</span><span class="lbn-char lbn-gold" style="--ci:11">b</span><span class="lbn-char lbn-gold" style="--ci:12">a</span>
+        </div>
+        <div class="loader-tagline-lux">Traditional Taste · Premium Quality</div>
+        <div class="loader-progress-wrap">
+            <div class="loader-progress-line"></div>
+        </div>
     </div>
 </div>
 
 <!-- PAGE WIPE OVERLAY -->
 <div id="page-wipe"></div>
-
-<!-- MAGNETIC CUSTOM CURSOR -->
-<div id="cursor-dot"></div>
-<div id="cursor-ring"></div>
-<div id="cursor-trail-container"></div>
 
 <!-- ══════════════════════════════════════════════
      NAVBAR
@@ -53,17 +62,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto text-center">
-                <li class="nav-item"><a class="nav-link magnetic-link" href="#home">HOME</a></li>
-                <li class="nav-item"><a class="nav-link magnetic-link" href="#about">PRODUCTS BENEFITS</a></li>
-                <li class="nav-item"><a class="nav-link magnetic-link" href="#candies">MURABBA TYPES</a></li>
-                <li class="nav-item"><a class="nav-link magnetic-link" href="#contact">CONTACT</a></li>
+                <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">PRODUCTS BENEFITS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#candies">MURABBA TYPES</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
 <!-- ══════════════════════════════════════════════
-     HERO SECTION — KINETIC TYPOGRAPHY REVEAL
+     HERO SECTION
 ══════════════════════════════════════════════ -->
 <header id="home" class="hero-section">
     <div class="hero-parallax-bg" id="heroBg"></div>
@@ -79,9 +88,8 @@
             <span class="kinetic-word w-gold">Murabba</span>
         </div>
         <p class="hero-sub kinetic-fade" style="--delay:1.2s">Traditional Taste. Modern Health. Premium Quality.</p>
-        <a href="#candies" class="btn btn-ginger btn-lg magnetic-btn kinetic-fade" style="--delay:1.5s">View Our Murabba Menu</a>
+        <a href="#candies" class="btn btn-ginger btn-lg kinetic-fade" style="--delay:1.5s">View Our Murabba Menu</a>
     </div>
-    <!-- Floating particles -->
     <div class="hero-particles" id="heroParticles"></div>
 </header>
 
@@ -149,98 +157,101 @@
             </div>
         </div>
 
-        <div class="row mt-5 g-4 text-center">
-            <div class="col-6 col-md-3 reveal-up" style="--rv:0s">
-                <div class="stat-pill">
-                    <h4 class="fw-bold text-warning mb-0 counter-num" data-target="100">0</h4>
-                    <span class="stat-pct">%</span>
-                    <p class="small text-muted mt-1">Organic Sourcing</p>
+        <!-- STATS ROW: 100% Organic hero-sized, others uniform -->
+        <div class="row mt-5 g-4 text-center align-items-center">
+
+            <!-- 100% ORGANIC — HERO SIZE -->
+            <div class="col-12 col-md-5 reveal-up" style="--rv:0s">
+                <div class="stat-pill-hero">
+                    <div style="position:relative;z-index:1;">
+                        <div class="d-flex justify-content-center align-items-baseline gap-1">
+                            <span class="hero-counter-num counter-num" data-target="100">0</span>
+                            <span class="hero-pct">%</span>
+                        </div>
+                        <p class="fw-bold text-dark mb-0 mt-1" style="font-size:1.1rem;">Organic Sourcing</p>
+                        <p class="text-muted small mt-1 mb-0">Farm to table — no middlemen</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-6 col-md-3 reveal-up" style="--rv:0.1s">
-                <div class="stat-pill">
-                    <h4 class="fw-bold text-warning mb-0">Pure</h4>
-                    <p class="small text-muted mt-1">No Chemicals</p>
+
+            <!-- 3 SMALL PILLS — SAME SIZE -->
+            <div class="col-12 col-md-7 reveal-up" style="--rv:0.1s">
+                <div class="row g-3">
+                    <div class="col-4">
+                        <div class="stat-pill">
+                            <h4 class="fw-bold text-warning mb-0">Pure</h4>
+                            <p class="small text-muted mt-1 mb-0">No Chemicals</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="stat-pill">
+                            <h4 class="fw-bold text-warning mb-0">Natural</h4>
+                            <p class="small text-muted mt-1 mb-0">No Preservatives</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="stat-pill">
+                            <h4 class="fw-bold text-warning mb-0">Handmade</h4>
+                            <p class="small text-muted mt-1 mb-0">Traditional Quality</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-6 col-md-3 reveal-up" style="--rv:0.2s">
-                <div class="stat-pill">
-                    <h4 class="fw-bold text-warning mb-0">Natural</h4>
-                    <p class="small text-muted mt-1">No Preservatives</p>
-                </div>
-            </div>
-            <div class="col-6 col-md-3 reveal-up" style="--rv:0.3s">
-                <div class="stat-pill">
-                    <h4 class="fw-bold text-warning mb-0">Handmade</h4>
-                    <p class="small text-muted mt-1">Traditional Quality</p>
-                </div>
-            </div>
+
         </div>
     </div>
 </section>
 
 <!-- ══════════════════════════════════════════════
-     PRODUCTS
+     PRODUCTS — COLLAPSE → EXPAND ON SCROLL
 ══════════════════════════════════════════════ -->
 <section id="candies" class="section-padding bg-ginger reveal-section">
     <div class="container">
         <div class="text-center mb-5 reveal-up" style="--rv:0s">
-            <h2 class="display-5 fw-bold text-white kinetic-section-title">VVS Price Varieties</h2>
+            <h2 class="display-5 fw-bold text-white">VVS Murabba Collection</h2>
             <div class="title-underline"></div>
         </div>
-        <div class="row g-4 justify-content-center">
+        <div class="row g-4 justify-content-center" id="candyRow">
 
-            <div class="col-md-4 col-sm-6 reveal-up" style="--rv:0.1s">
+            <div class="col-md-4 col-sm-6 candy-col">
                 <div class="candy-card text-center h-100 shadow border-0 p-3">
-                    <div class="badge bg-danger mb-3 p-2 px-4 rounded-pill pulse-badge">Ginger Mini Murabba Offer 🌿</div>
-                    <h2 class="fw-bold display-4 text-dark mb-0"><p><s style="color: red;">₹100</s> <b>₹80</b></p></h2>
-                    <h3 class="fw-bold fs-4 text-warning mb-3">Mini Murabba</h3>
+                    <div class="badge bg-danger mb-3 p-2 px-4 rounded-pill pulse-badge">Ginger Mini Murabba 🌿</div>
+                    <div class="product-name-display">Mini Murabba</div>
+                    <p class="text-muted small mb-3">20 Packs · Small Bundle</p>
                     <div class="img-container mb-3">
                         <img src="image/5gin.jpeg" class="img-fluid rounded-3" alt="Mini Murabba">
                     </div>
-                    <div class="pricing-info mb-2">
-                        <p class="mb-0 fw-bold fs-5 text-dark">Small Bundle: ₹80</p>
-                        <p class="mb-1 text-success small fw-bold">20 Packs (Save ₹20! 💸)</p>
-                    </div>
-                    <button class="btn btn-dark rounded-pill w-100 mt-2 magnetic-btn add-cart-btn" onclick="addToCart(80, 'Mini Murabba')">
+                    <button class="btn btn-dark rounded-pill w-100 mt-2 add-cart-btn" onclick="addToCart('Mini Murabba', event)">
                         <span class="btn-inner">Add to Cart</span>
                         <span class="btn-ripple"></span>
                     </button>
                 </div>
             </div>
 
-            <div class="col-md-4 col-sm-6 reveal-up" style="--rv:0.2s">
-                <div class="candy-card text-center h-100 shadow border-0 p-3 featured-card">
-                    <div class="badge bg-success mb-3 p-2 px-4 rounded-pill pulse-badge">Best Seller Offer 🌿</div>
-                    <h2 class="fw-bold display-4 text-dark mb-0"><p><s style="color: red;">₹300</s> <b>₹280</b></p></h2>
-                    <h3 class="fw-bold fs-4 text-warning mb-3">Ginger Jumbo</h3>
+            <div class="col-md-4 col-sm-6 candy-col">
+                <div class="candy-card featured-card text-center h-100 shadow border-0 p-3">
+                    <div class="badge bg-success mb-3 p-2 px-4 rounded-pill pulse-badge">Best Seller 🌿</div>
+                    <div class="product-name-display">Ginger Jumbo</div>
+                    <p class="text-muted small mb-3">30 Packs · Big Bundle</p>
                     <div class="img-container mb-3">
                         <img src="image/ging.jpeg" class="img-fluid rounded-3" alt="Ginger Jumbo">
                     </div>
-                    <div class="pricing-info mb-2">
-                        <p class="mb-0 fw-bold fs-5 text-dark">Big Bundle: ₹280</p>
-                        <p class="mb-1 text-success small fw-bold">30 Packs (Save ₹20! 💸)</p>
-                    </div>
-                    <button class="btn btn-dark rounded-pill w-100 mt-2 magnetic-btn add-cart-btn" onclick="addToCart(280, 'Ginger Jumbo')">
+                    <button class="btn btn-dark rounded-pill w-100 mt-2 add-cart-btn" onclick="addToCart('Ginger Jumbo', event)">
                         <span class="btn-inner">Add to Cart</span>
                         <span class="btn-ripple"></span>
                     </button>
                 </div>
             </div>
 
-            <div class="col-md-4 col-sm-6 reveal-up" style="--rv:0.3s">
+            <div class="col-md-4 col-sm-6 candy-col">
                 <div class="candy-card text-center h-100 shadow border-0 p-3">
-                    <div class="badge bg-warning text-dark mb-3 p-2 px-4 rounded-pill pulse-badge">Health Special Offer 🌿</div>
-                    <h2 class="fw-bold display-4 text-dark mb-0"><p><s style="color: red;">₹150</s> <b>₹130</b></p></h2>
-                    <h3 class="fw-bold fs-4 text-warning mb-3">Honey Amla</h3>
+                    <div class="badge bg-warning text-dark mb-3 p-2 px-4 rounded-pill pulse-badge">Health Special 🌿</div>
+                    <div class="product-name-display">Honey Amla</div>
+                    <p class="text-muted small mb-3">10 Packs · Health Bundle</p>
                     <div class="img-container mb-3">
                         <img src="image/amla.jpeg" class="img-fluid rounded-3" alt="Honey Amla">
                     </div>
-                    <div class="pricing-info mb-2">
-                        <p class="mb-0 fw-bold fs-5 text-dark">Bundle Price: ₹130</p>
-                        <p class="mb-1 text-success small fw-bold">10 Packs (Save ₹20! 💸)</p>
-                    </div>
-                    <button class="btn btn-dark rounded-pill w-100 mt-2 magnetic-btn add-cart-btn" onclick="addToCart(130, 'Honey Amla')">
+                    <button class="btn btn-dark rounded-pill w-100 mt-2 add-cart-btn" onclick="addToCart('Honey Amla', event)">
                         <span class="btn-inner">Add to Cart</span>
                         <span class="btn-ripple"></span>
                     </button>
@@ -259,7 +270,6 @@
         <div class="row align-items-center g-2 text-center text-md-start">
             <div class="col-md-3 col-12 text-white">
                 <span class="me-3">Items: <span id="count" class="fw-bold text-warning">0</span></span>
-                <span>Total: <span class="fw-bold text-warning">₹<span id="total">0</span></span></span>
             </div>
             <div class="col-md-7 col-12">
                 <div class="d-flex justify-content-center">
@@ -285,8 +295,8 @@
                 <h2 class="mb-4 fw-bold text-dark">Get in Touch</h2>
                 <div class="d-flex align-items-start mb-4 glass-contact-item">
                     <div class="bg-success text-white p-3 rounded-3 me-3">
-                        <a href="https://wa.me/916379028897" target="_blank" style="text-decoration: none; color: inherit;"><i class="bi bi-whatsapp"></i></a></div>
-                   
+                        <a href="https://wa.me/918489884354" target="_blank" style="text-decoration: none; color: inherit;"><i class="bi bi-whatsapp"></i></a>
+                    </div>
                     <div><h6 class="fw-bold mb-1">WhatsApp Support</h6></div>
                 </div>
             </div>
@@ -294,19 +304,19 @@
                 <div class="glass-card p-4 rounded-4 border-top border-ginger border-5">
                     <h4 class="mb-4 fw-bold">Send us a Message</h4>
                     <form id="contactForm">
-                        <div class="mb-3 input-float-wrap">
+                        <div class="mb-3">
                             <label class="form-label small fw-bold text-muted">Full Name</label>
                             <input type="text" id="userName" class="form-control fancy-input" placeholder="Your Name" required>
                         </div>
-                        <div class="mb-3 input-float-wrap">
+                        <div class="mb-3">
                             <label class="form-label small fw-bold text-muted">Phone Number</label>
                             <input type="tel" id="userPhone" class="form-control fancy-input" placeholder="Phone" required>
                         </div>
-                        <div class="mb-3 input-float-wrap">
+                        <div class="mb-3">
                             <label class="form-label small fw-bold text-muted">Your Inquiry</label>
                             <textarea id="userMsg" class="form-control fancy-input" rows="4" placeholder="Message" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-ginger btn-lg w-100 fw-bold shadow-sm magnetic-btn">Submit Inquiry</button>
+                        <button type="submit" class="btn btn-ginger btn-lg w-100 fw-bold shadow-sm">Submit Inquiry</button>
                     </form>
                 </div>
             </div>
@@ -315,7 +325,7 @@
 </section>
 
 <!-- ══════════════════════════════════════════════
-     FOOTER — DO NOT CHANGE THIS SECTION
+     FOOTER — DO NOT CHANGE
 ══════════════════════════════════════════════ -->
 <footer class="text-center py-4 bg-dark text-white">
     <p class="mb-0">&copy; 2026 VVS Ginger Murabba</p>
@@ -323,7 +333,7 @@
         <div class="footer-left-side">
             <div class="created-inline-wrapper">
                 <span class="created-text">Created by</span>
-                <a href="https://matrixbytes.github.io/" target="_blank" class="matrix-brand" id="matrix-brand-hover">
+                <a href="https://madhavan1341.github.io/MatrixBytes/" target="_blank" class="matrix-brand" id="matrix-brand-hover">
                     <div class="matrix-logo-circle-zoom">
                         <img src="image/MB.png" alt="MatrixBytes Logo">
                     </div>
@@ -340,38 +350,29 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
 /* ═══════════════════════════════════════════
-   CINEMATIC MORPHING LOADER
+   LOADER — animations start immediately, exit at 3s
 ═══════════════════════════════════════════ */
 (function(){
     const loader = document.getElementById('page-loader');
-    const morphPath = document.querySelector('.morph-path');
-    
-    const shapes = [
-        "M 100,30 C 150,30 170,65 170,100 C 170,135 150,170 100,170 C 50,170 30,135 30,100 C 30,65 50,30 100,30 Z",
-        "M 100,20 C 160,40 180,80 160,120 C 140,160 60,170 30,130 C 0,90 20,40 60,20 C 80,10 90,10 100,20 Z",
-        "M 50,50 C 80,10 150,20 170,60 C 190,100 170,160 130,175 C 90,190 30,160 20,120 C 10,80 30,80 50,50 Z",
-        "M 100,35 C 145,35 165,68 165,100 C 165,132 145,165 100,165 C 55,165 35,132 35,100 C 35,68 55,35 100,35 Z"
-    ];
-    let si = 0;
-    let morphTimer = setInterval(()=>{
-        si = (si+1)%shapes.length;
-        if(morphPath) morphPath.setAttribute('d', shapes[si]);
-    }, 600);
+    // Timer starts the moment this script runs — not waiting for fonts/images
+    const MIN_MS = 3000;
 
-    window.addEventListener('load', ()=>{
-        setTimeout(()=>{
-            clearInterval(morphTimer);
+    function exitLoader(){
+        if(loader && !loader.classList.contains('loader-exit')){
             loader.classList.add('loader-exit');
-            setTimeout(()=>{ loader.style.display='none'; }, 900);
-        }, 2200);
-    });
+            setTimeout(()=>{ loader.style.display = 'none'; }, 1000);
+        }
+    }
+
+    // Exit exactly MIN_MS after script runs
+    setTimeout(exitLoader, MIN_MS);
 })();
 
 /* ═══════════════════════════════════════════
    PAGE WIPE TRANSITION
 ═══════════════════════════════════════════ */
 document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener('click', function(e){
+    link.addEventListener('click', function(){
         const wipe = document.getElementById('page-wipe');
         wipe.classList.add('wipe-in');
         setTimeout(()=>{ wipe.classList.remove('wipe-in'); wipe.classList.add('wipe-out'); }, 300);
@@ -380,73 +381,12 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 });
 
 /* ═══════════════════════════════════════════
-   MAGNETIC CUSTOM CURSOR WITH LIQUID TRAIL
-═══════════════════════════════════════════ */
-const dot = document.getElementById('cursor-dot');
-const ring = document.getElementById('cursor-ring');
-const trailContainer = document.getElementById('cursor-trail-container');
-let mx = 0, my = 0, rx = 0, ry = 0;
-let trailDots = [];
-
-function isMobile(){ return window.innerWidth < 768; }
-
-document.addEventListener('mousemove', (e)=>{
-    if(isMobile()) return;
-    mx = e.clientX; my = e.clientY;
-    dot.style.left = mx + 'px';
-    dot.style.top = my + 'px';
-
-    // Liquid trail
-    const td = document.createElement('div');
-    td.className = 'trail-dot';
-    td.style.left = mx + 'px';
-    td.style.top = my + 'px';
-    td.style.width = td.style.height = (4 + Math.random()*4) + 'px';
-    trailContainer.appendChild(td);
-    setTimeout(()=>td.remove(), 600);
-});
-
-function animRing(){
-    rx += (mx - rx) * 0.12;
-    ry += (my - ry) * 0.12;
-    ring.style.left = rx + 'px';
-    ring.style.top = ry + 'px';
-    requestAnimationFrame(animRing);
-}
-if(!isMobile()) animRing();
-
-// Magnetic buttons
-document.querySelectorAll('.magnetic-btn, .magnetic-link').forEach(el => {
-    el.addEventListener('mousemove', (e)=>{
-        const rect = el.getBoundingClientRect();
-        const cx = rect.left + rect.width/2;
-        const cy = rect.top + rect.height/2;
-        const dx = (e.clientX - cx) * 0.3;
-        const dy = (e.clientY - cy) * 0.3;
-        el.style.transform = `translate(${dx}px, ${dy}px)`;
-        ring.classList.add('cursor-hover');
-        dot.classList.add('cursor-hover');
-    });
-    el.addEventListener('mouseleave', ()=>{
-        el.style.transform = '';
-        ring.classList.remove('cursor-hover');
-        dot.classList.remove('cursor-hover');
-    });
-});
-
-// Cursor state on cards
-document.querySelectorAll('.candy-card, .glass-card').forEach(el => {
-    el.addEventListener('mouseenter', ()=>{ ring.classList.add('cursor-expand'); });
-    el.addEventListener('mouseleave', ()=>{ ring.classList.remove('cursor-expand'); });
-});
-
-/* ═══════════════════════════════════════════
-   KINETIC HERO PARALLAX
+   HERO PARALLAX
 ═══════════════════════════════════════════ */
 const heroBg = document.getElementById('heroBg');
 window.addEventListener('scroll', ()=>{
     const sy = window.scrollY;
-    if(heroBg) heroBg.style.transform = `translateY(${sy * 0.45}px)`;
+    if(heroBg) heroBg.style.transform = `translateY(${sy * 0.4}px)`;
 });
 
 /* ═══════════════════════════════════════════
@@ -472,21 +412,35 @@ window.addEventListener('scroll', ()=>{
 })();
 
 /* ═══════════════════════════════════════════
-   SCROLL REVEAL
+   SCROLL REVEAL (general)
 ═══════════════════════════════════════════ */
 const revealEls = document.querySelectorAll('.reveal-up');
 const revealObserver = new IntersectionObserver((entries)=>{
     entries.forEach(entry=>{
         if(entry.isIntersecting){
             const el = entry.target;
-            const delay = el.style.getPropertyValue('--rv') || '0s';
-            el.style.transitionDelay = delay;
+            el.style.transitionDelay = el.style.getPropertyValue('--rv') || '0s';
             el.classList.add('revealed');
             revealObserver.unobserve(el);
         }
     });
 }, { threshold: 0.15 });
 revealEls.forEach(el => revealObserver.observe(el));
+
+/* ═══════════════════════════════════════════
+   CANDY CARDS — COLLAPSE → EXPAND ON SCROLL
+═══════════════════════════════════════════ */
+const candyCols = document.querySelectorAll('.candy-col');
+const cardObserver = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            // Trigger the expand animation
+            entry.target.querySelector('.candy-card').classList.add('card-revealed');
+            cardObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.18 });
+candyCols.forEach(col => cardObserver.observe(col));
 
 /* ═══════════════════════════════════════════
    COUNTER ANIMATION
@@ -498,7 +452,7 @@ const counterObserver = new IntersectionObserver((entries)=>{
             const el = entry.target;
             const target = parseInt(el.dataset.target);
             let current = 0;
-            const step = target / 60;
+            const step = target / 70;
             const timer = setInterval(()=>{
                 current += step;
                 if(current >= target){ current = target; clearInterval(timer); }
@@ -516,6 +470,7 @@ counterEls.forEach(el => counterObserver.observe(el));
 document.querySelectorAll('.add-cart-btn').forEach(btn => {
     btn.addEventListener('click', function(e){
         const ripple = this.querySelector('.btn-ripple');
+        if(!ripple) return;
         const rect = this.getBoundingClientRect();
         ripple.style.left = (e.clientX - rect.left) + 'px';
         ripple.style.top = (e.clientY - rect.top) + 'px';
@@ -535,23 +490,48 @@ window.addEventListener('scroll', ()=>{
 });
 
 /* ═══════════════════════════════════════════
-   CART LOGIC (UNCHANGED)
+   PARTICLE BURST on Add to Cart
+═══════════════════════════════════════════ */
+function spawnBurst(x, y){
+    const colors = ['#f89d1c','#d35400','#fff','#ffd580','#b8440a'];
+    for(let i = 0; i < 18; i++){
+        const p = document.createElement('div');
+        p.className = 'burst-particle';
+        const angle = (Math.PI * 2 / 18) * i;
+        const dist = 60 + Math.random() * 60;
+        p.style.cssText = `
+            left:${x}px; top:${y}px;
+            background:${colors[Math.floor(Math.random()*colors.length)]};
+            --bx:${Math.cos(angle)*dist}px;
+            --by:${Math.sin(angle)*dist}px;
+            width:${5+Math.random()*6}px;
+            height:${5+Math.random()*6}px;
+            animation-duration:${0.6+Math.random()*0.4}s;
+        `;
+        document.body.appendChild(p);
+        setTimeout(()=> p.remove(), 1000);
+    }
+}
+
+/* ═══════════════════════════════════════════
+   CART LOGIC
 ═══════════════════════════════════════════ */
 let totalItems = 0;
-let totalPrice = 0;
 let cartContents = {};
-const myNumber = "916379028897"; // Replace with your WhatsApp number in international format without '+' or dashes     w
+const myNumber = "918489884354";
 
-function addToCart(price, itemName) {
+function addToCart(itemName, event) {
+    // Particle burst
+    if(event){
+        spawnBurst(event.clientX, event.clientY);
+    }
+
     document.getElementById('cart-status').style.display = 'block';
     const footer = document.querySelector('footer');
     if(footer) footer.style.display = 'none';
     totalItems++;
-    totalPrice += price;
     cartContents[itemName] = (cartContents[itemName] || 0) + 1;
     document.getElementById('count').innerText = totalItems;
-    document.getElementById('total').innerText = totalPrice;
-    // Cart bounce anim
     const cartBar = document.getElementById('cart-status');
     cartBar.classList.remove('cart-bounce');
     void cartBar.offsetWidth;
@@ -559,21 +539,27 @@ function addToCart(price, itemName) {
 }
 
 function resetCart() {
-    totalItems = 0; totalPrice = 0; cartContents = {};
+    totalItems = 0; cartContents = {};
     document.getElementById('count').innerText = '0';
-    document.getElementById('total').innerText = '0';
     document.getElementById('cart-status').style.display = 'none';
     const footer = document.querySelector('footer');
     if(footer) footer.style.display = 'block';
 }
 
 function sendOrder() {
-    let name = document.getElementById('cartUserName').value;
-    let phone = document.getElementById('cartUserPhone').value;
+    let name = document.getElementById('cartUserName').value.trim();
+    let phone = document.getElementById('cartUserPhone').value.trim();
     if(!name || !phone){ alert("Please enter Name and Phone in the bar to order!"); return; }
-    let summary = "";
-    for(let item in cartContents){ summary += `%0A- ${cartContents[item]} x ${item}`; }
-    let orderMsg = `*VVS New Order Alert*%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Items:* ${summary}%0A%0A*Total Amount: ₹${totalPrice}*`;
+
+    let itemLines = '';
+    for(let item in cartContents){
+        const qty = cartContents[item];
+        itemLines += `%0AProduct: ${item}%0AQuantity: ${qty} Box${qty > 1 ? 'es' : ''}%0A`;
+    }
+
+    let orderMsg =
+        `Hello,%0A%0AI would like to order:%0A${itemLines}%0APlease share the price and confirm my order.%0A%0AName: ${name}%0APhone: ${phone}`;
+
     window.open(`https://wa.me/${myNumber}?text=${orderMsg}`, '_blank');
 }
 
